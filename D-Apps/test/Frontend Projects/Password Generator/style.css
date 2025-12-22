@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right , rgb(1, 80, 1),rgb(131, 241, 131));
+}
+.container h1{
+    font-family: monospace;
+    color: white;
+   
+}.container{
+    margin-top: 10%;
+    margin-left: 10%; 
+    font-size: 30px;
+}.container h1 span{
+
+   color: rgb(2, 34, 2);
+   
+}.display{
+    margin-top: 20px;
+
+}.container input  {
+    font-size: larger;
+    margin-top: 20px;
+    width: 50%;
+    height: 5rem;
+    border-radius: 5px;
+    border: none;
+}.container button{
+    margin-top: 20px;
+    width: 20%;
+    height: 3rem;
+    font-size: large;
+    color: white;
+    background-color: rgb(2, 16, 46);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
