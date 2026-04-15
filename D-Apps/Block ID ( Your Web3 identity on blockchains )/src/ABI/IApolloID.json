@@ -1,0 +1,145 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "normalizeName",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "normalizedName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "tld",
+        "type": "string"
+      }
+    ],
+    "name": "isAvailable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "normalizedName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "tld",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "years",
+        "type": "uint256"
+      }
+    ],
+    "name": "priceFor",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "tld",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "years",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "tokenURI",
+        "type": "string"
+      }
+    ],
+    "name": "register",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "tld",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "years",
+        "type": "uint256"
+      }
+    ],
+    "name": "renew",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "tokenId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "expiryOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
