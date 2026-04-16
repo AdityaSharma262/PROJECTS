@@ -22,15 +22,15 @@ const FAQ = () => {
     },
     {
       question: "How is messaging encrypted?",
-      answer: "We use end-to-end encryption with your wallet's private key. Only you and your recipient can decrypt messages — not even BitEthWorks can access your communications."
+      answer: "We use end-to-end encryption with your wallet's private key. Only you and your recipient can decrypt messages — not even BlockID can access your communications."
     },
     {
       question: "Can I transfer my .zeus domain?",
       answer: "Yes! You have complete ownership of your .zeus domain and can transfer it to any wallet address at any time through your management dashboard.",
     },
     {
-      question: "Does BitEthWorks support multiple blockchains?",
-      answer: "Absolutely. BitEthWorks works across BNB, Ethereum, Base, Polygon, and APE Chain, giving you true multi-chain identity."
+      question: "Does BlockID support multiple blockchains?",
+      answer: "Absolutely. BlockID works across BNB, Ethereum, Base, Polygon, and APE Chain, giving you true multi-chain identity."
     },
   ];
 
@@ -45,7 +45,7 @@ const FAQ = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-          <p className="text-muted-foreground">Everything you need to know about BitEthWorks.</p>
+          <p className="text-muted-foreground">Everything you need to know about BlockID.</p>
         </motion.div>
         
         <div className="max-w-3xl mx-auto">

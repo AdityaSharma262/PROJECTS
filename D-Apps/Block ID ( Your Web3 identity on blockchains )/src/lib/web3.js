@@ -9,7 +9,7 @@ globalThis.projectId = projectId;
 console.log('WalletConnect Project ID:', projectId);
 
 export const config = getDefaultConfig({
-  appName: "BitEthWorks",
+  appName: "BlockID",
   projectId,
   chains: [BNB],
   transports: {

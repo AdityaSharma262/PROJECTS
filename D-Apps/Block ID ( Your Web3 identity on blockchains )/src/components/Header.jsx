@@ -50,7 +50,7 @@ const Header = () => {
                <img 
                  src="/bitethwork.png" 
                  alt="Bitethwork Logo" 
-                 className="h-16 w-auto object-contain "
+                 className="h-24 w-auto object-contain "
                />
              </a>
           

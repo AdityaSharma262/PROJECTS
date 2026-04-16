@@ -7,7 +7,7 @@ const Developer = () => {
   const features = [
     {
       icon: Code,
-      title: "BitEthWorks SDK & API",
+      title: "BlockID SDK & API",
       description: "Integrate .zeus domain resolution into any dApp in just 30 minutes with our comprehensive SDK.",
     },
     {
@@ -18,7 +18,7 @@ const Developer = () => {
     {
       icon: Rocket,
       title: "Go-to-Market Tools",
-      description: "Community tools and modules to launch your own identity services on BitEthWorks infrastructure."
+      description: "Community tools and modules to launch your own identity services on BlockID infrastructure."
     },
     {
       icon: Zap,
@@ -32,9 +32,9 @@ const Developer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">Build on BitEthWorks</h2>
+            <h2 className="text-4xl font-bold mb-6">Build on BlockID</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              BitEthWorks provides a robust infrastructure for developers to build decentralized
+              BlockID provides a robust infrastructure for developers to build decentralized
               identity solutions. Our SDK makes it easy to integrate domain resolution 
               and messaging into your dApps.
             </p>

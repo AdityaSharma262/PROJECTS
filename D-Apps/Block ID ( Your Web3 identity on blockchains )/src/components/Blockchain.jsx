@@ -15,7 +15,7 @@ const Blockchain = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6">Multi-Chain Identity</h2>
             <p className="text-muted-foreground mb-8">
-              BitEthWorks provides a unified identity layer across multiple blockchain networks,
+              BlockID provides a unified identity layer across multiple blockchain networks,
               starting with BNB.
             </p>
             <div className="flex gap-4">
