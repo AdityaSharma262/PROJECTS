@@ -22,16 +22,16 @@ A collection of beginner to intermediate-level frontend projects made using HTML
 
 | Project Name                                 | Tech Used           | Description                                                                 |
 |----------------------------------------------|---------------------|-----------------------------------------------------------------------------|
-| [Age Calculator](./age-calculator)           | HTML, CSS, JS       | Calculates age from date of birth                                          |
-| [Amazon Clone](./amazon-clone-frontend)      | HTML, CSS           | A basic static clone of Amazon’s UI                                        |
-| [Calculator](./calculator)                   | HTML, CSS, JS       | Functional calculator with UI                                              |
-| [Password Generator](./password-generator)   | HTML, CSS, JS       | Generates strong random passwords                                          |
-| [Rock Paper Scissor](./rock-paper-scissor)   | HTML, CSS, JS       | Game logic with scoring system                                             |
-| [Tic Tac Toe](./tic-tac-toe)                 | HTML, CSS, JS       | Classic game with turn-based logic                                         |
-| [Text to QR Code](./txt-to-qr-code)          | HTML, CSS, JS       | Converts text input into a QR code                                         |
-| [To-Do List (React)](./to-do-list)           | React, Next.js, CSS | Task tracker with add/delete features                                      |
-| [Ochi Clone](./ochi-clone)                   | React, Next.js, CSS | A modern UI/UX-focused clone of the Ochi website with transitions/animations |
-| [TwoGoodCo. Clone](./twogoodco-clone)        | HTML, CSS, JS       | A visually appealing clone of TwoGoodCo. site with clean layout and responsiveness |
+| [Age Calculator](./Frontend%20Projects/Age%20Calculator)           | HTML, CSS, JS       | Calculates age from date of birth                                          |
+| [Amazon Clone](./Frontend%20Projects/Amazon-Clone(frontend))      | HTML, CSS           | A basic static clone of Amazon's UI                                        |
+| [Calculator](./Frontend%20Projects/Calculator)                   | HTML, CSS, JS       | Functional calculator with UI                                              |
+| [Password Generator](./Frontend%20Projects/Password%20Generator)   | HTML, CSS, JS       | Generates strong random passwords                                          |
+| [Rock Paper Scissor](./Frontend%20Projects/Rock-Paper-%20Scissor)   | HTML, CSS, JS       | Game logic with scoring system                                             |
+| [Tic Tac Toe](./Frontend%20Projects/TIC-TAC-TOE)                 | HTML, CSS, JS       | Classic game with turn-based logic                                         |
+| [Text to QR Code](./Frontend%20Projects/TXT%20to%20QR-CODE)          | HTML, CSS, JS       | Converts text input into a QR code                                         |
+| [To-Do List (React)](./Frontend%20Projects/To-Do-List)           | React, Next.js, CSS | Task tracker with add/delete features                                      |
+| [Ochi Clone](./Frontend%20Projects/Ochi-clone)                   | React, Next.js, CSS | A modern UI/UX-focused clone of the Ochi website with transitions/animations |
+| [TwoGoodCo. Clone](./Frontend%20Projects/TwoGoodCo)        | HTML, CSS, JS, Video       | A visually appealing clone of TwoGoodCo. site with clean layout, responsiveness, and video integration |
 
 ### 📌 Notes
 - This repository is for frontend practice and showcases.
@@ -44,12 +44,15 @@ A collection of beginner to intermediate-level frontend projects made using HTML
 
 Solidity-based contracts built with various blockchain use cases:
 
+- **Auction** – Simple auction system for bidding and claiming items  
 - **Bank Contract** – Simple ETH deposit and withdrawal system  
 - **Crowdfunding DApp** – Raise funds with contributor governance  
-- **Event Ticketing** – Buy and manage event tickets on-chain  
+- **Event Management** – Organize and manage events on-chain  
 - **Hotel Booking** – Book hotel rooms with ETH and room status logic  
 - **Lottery System** – Randomly select a winner using keccak256  
 - **Multi-signature Wallet** – Secure ETH transactions needing multiple confirmations  
+- **Safe Remote Purchase** – Secure peer-to-peer purchase with escrow logic  
+- **Threat Intelligence Marketplace** – Decentralized marketplace for threat intelligence data  
 - **Weather Insurance** – Payouts based on real-time temperature using Chainlink  
 - **Voting System** – Add candidates and cast one-time secure votes  
 
@@ -57,26 +60,30 @@ Solidity-based contracts built with various blockchain use cases:
 
 ## ⚡ D-Apps
 
-A new section added for complete decentralized applications integrating frontend with smart contracts.
+A collection of complete decentralized applications integrating frontend with smart contracts.
 
 ### 📂 Project List
 
 | Project Name                               | Tech Used                                | Description                                                                 |
 |--------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
-| [TSender](./D-Apps/tsender)                | Next.js, wagmi, RainbowKit, Solidity      | Efficient ERC20 multi-recipient airdrop platform with gas-optimized smart contract |
-| [NFT Auction](./D-Apps/NFTAuction)        | React, web3.js, Solidity      | Decentralized NFT auction platform with bidding and auction management |
-| [Decentralized FreelanceEscrow Platform](./D-Apps/freelance-escrow) | React, Solidity, Web3.js | Secure escrow system for freelancers and clients with dispute resolution  |
+| [Block ID](./D-Apps/Block%20ID%20(%20Your%20Web3%20identity%20on%20blockchains%20))                | React, Vite, wagmi, RainbowKit, Solidity      | Your Web3 identity on blockchains - decentralized domain registration and management system |
+| [BlockLance](./D-Apps/BlockLance(%20Decentralized%20Freelance%20Escrow%20Platform%20)) | React, Vite, Hardhat, Solidity, Web3.js | Decentralized freelance escrow platform with secure payment handling and dispute resolution  |
+| [CyroBid Arena](./D-Apps/CyroBid%20Arena(%20NFT%20Auction%20House%20))        | React, Vite, Hardhat, Solidity      | NFT auction house with decentralized bidding and auction management |
+| [Token Storm (TSender)](./D-Apps/Token%20Strom%20(%20Multi-Recipient%20ERC20%20Airdrop%20Platform%20)) | Next.js, wagmi, RainbowKit, Solidity      | Efficient ERC20 multi-recipient airdrop platform with gas-optimized smart contract |
 
-- `D-Apps/` is a new folder in the home directory to organize full-stack DApps.
-- Each project combines both UI and smart contract logic into a unified solution.
+- `D-Apps/` contains full-stack decentralized applications
+- Each project combines both UI and smart contract logic into a unified solution
+- Projects use modern Web3 stacks including RainbowKit, wagmi, Hardhat, and various blockchain networks
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, React, Next.js  
-- **Smart Contracts:** Solidity  
-- **Tools:** Remix IDE, MetaMask, Ganache, Chainlink, Web3.js  
+- **Frontend:** HTML, CSS, JavaScript, React, Next.js, Vite, TailwindCSS  
+- **Smart Contracts:** Solidity, Hardhat  
+- **Web3 Integration:** wagmi, RainbowKit, Web3.js, Ethers.js  
+- **Tools:** Remix IDE, MetaMask, Ganache, Chainlink  
+- **Blockchain Networks:** Ethereum, BNB Chain, and other EVM-compatible chains  
 
 ---
 
