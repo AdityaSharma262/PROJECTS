@@ -24,10 +24,7 @@ const FAQ = () => {
       question: "How is messaging encrypted?",
       answer: "We use end-to-end encryption with your wallet's private key. Only you and your recipient can decrypt messages — not even BlockID can access your communications."
     },
-    {
-      question: "Can I transfer my .zeus domain?",
-      answer: "Yes! You have complete ownership of your .zeus domain and can transfer it to any wallet address at any time through your management dashboard.",
-    },
+   
     {
       question: "Does BlockID support multiple blockchains?",
       answer: "Absolutely. BlockID works across BNB, Ethereum, Base, Polygon, and APE Chain, giving you true multi-chain identity."
