@@ -4,7 +4,7 @@ A blockchain-based freelance platform that enables secure, trustless transaction
 
 ## 📸 Preview
 
-![BlockLance Platform Preview](/public/homeSnap.PNG)
+![BlockLance Platform Preview](./public/homeSnap.PNG)
 
 > **Modern, production-grade UI** with seamless Web3 integration for secure freelance escrow transactions
 
