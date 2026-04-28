@@ -2,6 +2,12 @@
 
 A blockchain-based freelance platform that enables secure, trustless transactions between clients and freelancers using smart contracts on Ethereum.
 
+## 📸 Preview
+
+![BlockLance Platform Preview](/public/homeSnap.PNG)
+
+> **Modern, production-grade UI** with seamless Web3 integration for secure freelance escrow transactions
+
 ## 🌟 Features
 
 - **Secure Escrow System**: Funds are locked in smart contracts until work is approved

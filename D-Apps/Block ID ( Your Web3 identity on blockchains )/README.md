@@ -1,8 +1,10 @@
 # BlockID - Your Web3 Identity on Blockchains
 
-![BlockID](public/favicon.png)
-
 **BlockID** is a decentralized Web3 identity and domain registry built on blockchain technology. Own, manage, and communicate securely with your `.bnb` domain. BlockID provides a unified identity layer across multiple blockchain networks, enabling users to claim their digital identity in the decentralized web.
+
+## 📸 Preview
+
+![BlockID Homepage](public/homeSnap.PNG)
 
 ## 🌟 Features
 
