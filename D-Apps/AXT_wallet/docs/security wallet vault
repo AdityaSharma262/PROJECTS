@@ -1,0 +1,68 @@
+# Phase 3B: Secure Wallet Vault — Implementation Report
+
+The Phase 3B security architecture has been fully implemented and verified through comprehensive unit testing. The vault layer now securely encrypts, stores, decrypts, and deletes the wallet payload according to the strict cryptographic specification.
+
+As requested, this implementation contains **no UI integration** and acts purely as the secure foundation.
+
+## 📁 Implementation Structure
+
+```text
+src/
+├── security/
+│   ├── encryption/
+│   │   ├── aes-gcm.ts            # @noble/ciphers AES-256-GCM wrapper
+│   │   ├── key-derivation.ts     # PBKDF2-HMAC-SHA256 & HKDF-SHA256
+│   │   └── index.ts              
+│   │
+│   └── secure-storage/
+│       ├── interface.ts          # ISecureStorage contract
+│       ├── secure-storage.android.ts # expo-secure-store implementation
+│       └── index.ts              
+│
+├── storage/
+│   └── app-storage.ts            # AsyncStorage for the JSON vault
+│
+└── wallet/
+    └── vault/
+        ├── vault.types.ts        # EncryptedVaultPayload interface
+        └── vault.service.ts      # Orchestrates DK/PK/MEK & Encryption lifecycle
+```
+
+## 🔐 Cryptography Breakdown
+
+1. **PBKDF2**: Uses `HMAC-SHA256` with 250,000 iterations and a 16-byte random salt to generate the 32-byte PIN Key (PK). 
+2. **Device Key (DK)**: 32 random bytes stored in Android Keystore via `expo-secure-store`.
+3. **HKDF**: Uses `SHA-256`, the PBKDF2 salt, and the context string `AXT_WALLET_V1_MEK` to derive the Master Encryption Key (MEK) from `DK || PK`.
+4. **AES-GCM**: Uses `AES-256-GCM` with a fresh 12-byte random nonce per encryption and a 16-byte authentication tag. Uses AAD `"AXT_VAULT_V1"`.
+5. **Vault Format**: The mnemonic is stored as base64 ciphertext inside a versioned JSON payload alongside the KDF salt and encryption nonce/tag.
+
+## 📦 Dependencies Added
+
+1. **`expo-secure-store`**: Official hardware-backed keystore interface.
+2. **`@react-native-async-storage/async-storage`**: App storage for the JSON vault payload.
+3. **`@noble/hashes`**: Pure-TS audited implementation of PBKDF2, HKDF, and SHA256.
+4. **`@noble/ciphers`**: Pure-TS audited implementation of AES-256-GCM.
+
+*Rationale*: By using `@noble`, we achieve high cryptographic security and platform-independence without adding complex C++ native-module compilation steps (like `react-native-quick-crypto`).
+
+## ⏱️ Benchmarking
+
+I executed a benchmark of the `250,000` PBKDF2 iteration count.
+- **Node Environment (V8)**: Executes in ~80-110ms.
+- **Hermes / Android Emulator**: Estimated to execute in ~300-500ms based on engine differences. The iteration count is explicitly declared as `CURRENT_PBKDF2_ITERATIONS` in `vault.service.ts` so it can be easily adjusted or version-bumped once tested on real hardware.
+
+## ✅ Security Validation & Tests
+
+All **11 unit tests** (across `encryption.test.ts` and `vault.test.ts`) passed successfully.
+
+Verified behaviors:
+- `[x]` Encryption/decryption round trip succeeds.
+- `[x]` Wrong PIN properly throws an AES-GCM tag validation error (oracle safe).
+- `[x]` Modified ciphertext, tag, or nonce results in immediate decryption failure.
+- `[x]` Distinct encryptions generate totally unique ciphertexts (due to fresh nonces).
+- `[x]` Wiping the DK simulates a Keystore loss and properly prevents decryption.
+- `[x]` No secrets (mnemonic, DK, PK, MEK, PIN) are logged anywhere in the codebase.
+
+## ⏭️ Next Steps
+
+The cryptographic vault is complete. We are now ready to begin **Phase 3C**: Integrating this vault into the user interface (connecting the PIN screens to trigger the actual encryption and decryption of the wallet).
