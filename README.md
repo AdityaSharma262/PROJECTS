@@ -66,6 +66,8 @@ A collection of complete decentralized applications integrating frontend with sm
 
 | Project Name                               | Tech Used                                | Description                                                                 |
 |--------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
+| [AXT Wallet](./D-Apps/AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29) | React Native, Expo, ethers.js, WalletConnect v2, AES-256-GCM | Production-grade non-custodial decentralized cryptocurrency wallet mobile app (Android) with hardware-backed Keystore, biometrics & multi-chain EVM |
+| [CrossLink Bridge](./D-Apps/CrossLink%20(Secure%20Bridges%20for%20a%20Decentralized%20World)) | React 19, Vite, Tailwind CSS, Wagmi, RainbowKit | Secure multi-chain decentralized bridge across 7+ networks with wide stablecoin support |
 | [Block ID](./D-Apps/Block%20ID%20(%20Your%20Web3%20identity%20on%20blockchains%20))                | React, Vite, wagmi, RainbowKit, Solidity      | Your Web3 identity on blockchains - decentralized domain registration and management system |
 | [BlockLance](./D-Apps/BlockLance(%20Decentralized%20Freelance%20Escrow%20Platform%20)) | React, Vite, Hardhat, Solidity, Web3.js | Decentralized freelance escrow platform with secure payment handling and dispute resolution  |
 | [CyroBid Arena](./D-Apps/CyroBid%20Arena(%20NFT%20Auction%20House%20))        | React, Vite, Hardhat, Solidity      | NFT auction house with decentralized bidding and auction management |
@@ -80,11 +82,13 @@ A collection of complete decentralized applications integrating frontend with sm
 
 ## 🛠 Tech Stack
 
+- **Mobile:** React Native, Expo, Android SDK
 - **Frontend:** HTML, CSS, JavaScript, React, Next.js, Vite, TailwindCSS  
 - **Smart Contracts:** Solidity, Hardhat  
-- **Web3 Integration:** wagmi, RainbowKit, Web3.js, Ethers.js  
-- **Tools:** Remix IDE, MetaMask, Ganache, Chainlink  
-- **Blockchain Networks:** Ethereum, BNB Chain, and other EVM-compatible chains  
+- **Web3 Integration:** wagmi, RainbowKit, Web3.js, Ethers.js, WalletConnect v2  
+- **Cryptography & Security:** AES-256-GCM, PBKDF2, Android Keystore, Biometrics  
+- **Tools:** Remix IDE, MetaMask, Ganache, Chainlink, Expo Application Services (EAS), Android Studio  
+- **Blockchain Networks:** Ethereum, Arbitrum, Optimism, Polygon, BNB Chain, and other EVM-compatible chains
 
 ---
 
