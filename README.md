@@ -72,7 +72,7 @@ A collection of complete decentralized applications integrating frontend with sm
 | [BlockLance](./D-Apps/BlockLance%28%20Decentralized%20Freelance%20Escrow%20Platform%20%29) | React, Vite, Hardhat, Solidity, Web3.js | Decentralized freelance escrow platform with secure payment handling and dispute resolution |
 | [CyroBid Arena](./D-Apps/CyroBid%20Arena%28%20NFT%20Auction%20House%20%29) | React, Vite, Hardhat, Solidity | NFT auction house with decentralized bidding and auction management |
 | [Token Storm (TSender)](./D-Apps/Token%20Strom%20%28%20Multi-Recipient%20ERC20%20Airdrop%20Platform%20%29) | Next.js, wagmi, RainbowKit, Solidity | Efficient ERC20 multi-recipient airdrop platform with gas-optimized smart contract |
-| [Cyber Estate (RWA)](./D-Apps/RWA) | React, Vite, TypeScript, Tailwind CSS, ethers.js, Solidity | Production-grade RWA tokenization platform with KYC compliance, P2P marketplace, and yield distribution on BNB Chain |
+| [Cyber Estate (RWA)](./D-Apps/Cyber%20Estate%20%28%20Real%20World%20Asset%20Tokenization%20%29) | React 18, Vite, TypeScript, Tailwind CSS, ethers.js, Solidity | Institutional-grade Real World Asset (RWA) tokenization protocol with KYC compliance, P2P secondary marketplace, and yield distribution on BNB Chain |
 
 - `D-Apps/` contains full-stack decentralized applications
 - Each project combines both UI and smart contract logic into a unified solution

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <defs>
+    <linearGradient id="cyberGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Gold Gradient Rounded Base -->
+  <rect width="32" height="32" rx="7" fill="url(#cyberGold)"/>
+
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" stroke="#FDE68A" stroke-opacity="0.3" fill="none"/>
+
+  <!-- BarChart3 Logo Icon -->
+  <g transform="translate(4, 4)" stroke="#090D1A" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="M18 17V9"/>
+    <path d="M13 17V5"/>
+    <path d="M8 17v-3"/>
+  </g>
+</svg>
