@@ -185,35 +185,38 @@ AXT_wallet/
 
 ```mermaid
 flowchart TD
-    subgraph User Input
-        PIN[User 6-Digit PIN]
+    subgraph UserInput["User Input"]
+        PIN["User 6-Digit PIN"]
     end
 
-    subgraph Hardware Security
-        Keystore[Android Keystore / SecureStore]
-        DeviceKey[Hardware-Protected Device Secret]
+    subgraph HardwareSecurity["Hardware Security"]
+        Keystore["Android Keystore / SecureStore"]
+        DeviceKey["Hardware-Protected Device Secret"]
     end
 
-    subgraph Key Derivation Engine
-        PIN --> PBKDF2[PBKDF2-HMAC-SHA256]
+    subgraph KeyDerivation["Key Derivation Engine"]
+        PIN --> PBKDF2["PBKDF2-HMAC-SHA256"]
         Keystore --> DeviceKey
-        DeviceKey --> HKDF[HKDF Expansion]
-        PBKDF2 --> Combine((Entropy Combiner))
+        DeviceKey --> HKDF["HKDF Expansion"]
+        PBKDF2 --> Combine(("Entropy Combiner"))
         HKDF --> Combine
-        Combine --> MEK[Master Encryption Key - 256 bit]
+        Combine --> MEK["Master Encryption Key (256-bit)"]
     end
 
-    subgraph Encrypted Storage
-        Ciphertext[Encrypted Vault Payload]
-        IV[96-bit Random IV]
-        AuthTag[128-bit Authentication Tag]
+    subgraph EncryptedStorage["Encrypted Storage"]
+        Ciphertext["Encrypted Vault Payload"]
+        IV["96-bit Random IV"]
+        AuthTag["128-bit Authentication Tag"]
     end
 
-    MEK & Ciphertext & IV & AuthTag --> AES[AES-256-GCM Decryption]
-    AES --> EphemeralKey[Ephemeral In-Memory Seed / Private Key]
-    EphemeralKey --> SignOperation[Single-Pass Sign: TX / Message]
-    SignOperation --> Broadcast[Broadcast to Blockchain Node]
-    SignOperation -.-> Flush[Purge Private Key From Memory Immediately]
+    MEK --> AES["AES-256-GCM Decryption"]
+    Ciphertext --> AES
+    IV --> AES
+    AuthTag --> AES
+    AES --> EphemeralKey["Ephemeral In-Memory Seed / Private Key"]
+    EphemeralKey --> SignOperation["Single-Pass Sign: TX / Message"]
+    SignOperation --> Broadcast["Broadcast to Blockchain Node"]
+    SignOperation -.-> Flush["Purge Private Key From Memory Immediately"]
 ```
 
 > **Security Guarantee:** At no point is the raw private key or mnemonic phrase stored in unencrypted memory or persisted to flash storage. Decryption only occurs ephemerally during PIN-confirmed actions and is immediately scrubbed from the JS runtime heap.

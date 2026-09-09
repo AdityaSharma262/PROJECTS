@@ -109,43 +109,44 @@ All core protocol contracts are compiled with Solidity `0.8.20` with optimizer e
 
 ```mermaid
 flowchart TD
-    subgraph Originators & Governance
-        Admin[Protocol Admin]
-        Issuer[Asset Originator / Real Estate Issuer]
-        Factory[RWAAssetFactory.sol]
+    subgraph Originators["Originators & Governance"]
+        Admin["Protocol Admin"]
+        Issuer["Asset Originator / Issuer"]
+        Factory["RWAAssetFactory.sol"]
     end
 
-    subgraph Core Asset Contracts
-        AssetToken[RWAAssetToken.sol - ERC-1155]
-        SecurityToken[RWASecurityToken.sol - ERC-3643]
-        YieldToken[RWAYieldToken.sol - ERC-20]
+    subgraph CoreContracts["Core Asset Contracts"]
+        AssetToken["RWAAssetToken.sol (ERC-1155)"]
+        SecurityToken["RWASecurityToken.sol (ERC-3643)"]
+        YieldToken["RWAYieldToken.sol (ERC-20)"]
     end
 
-    subgraph Compliance & Settlement
-        KYC[KYCRegistry.sol]
-        Marketplace[RWAMarketplace.sol - Escrow]
-        Redeem[RedemptionManager.sol]
+    subgraph ComplianceSettlement["Compliance & Settlement"]
+        KYC["KYCRegistry.sol"]
+        Marketplace["RWAMarketplace.sol (Escrow)"]
+        Redeem["RedemptionManager.sol"]
     end
 
-    subgraph Investors
-        Investor[Verified Web3 Investor]
+    subgraph UserBase["Verified Investors"]
+        Investor["Verified Web3 Investor"]
     end
 
-    Issuer -->|1. Submit Asset Metadata| Factory
-    Admin -->|2. Verify & Approve Asset| Factory
-    Factory -->|3. Mint Fractional Tokens| AssetToken & SecurityToken
+    Issuer -->|"1. Submit Asset Metadata"| Factory
+    Admin -->|"2. Verify & Approve Asset"| Factory
+    Factory -->|"3. Mint Asset Tokens"| AssetToken
+    Factory -->|"3. Mint Security Tokens"| SecurityToken
 
-    Investor -->|4. Submit KYC/Jurisdiction| KYC
-    Admin -->|5. Verify & Whitelist| KYC
+    Investor -->|"4. Submit KYC & Jurisdiction"| KYC
+    Admin -->|"5. Verify & Whitelist"| KYC
 
-    Investor -->|6. Buy Primary Shares| AssetToken
-    Investor -->|7. Trade P2P (Escrow)| Marketplace
-    Marketplace -.->|Check Whitelist| KYC
+    Investor -->|"6. Buy Primary Shares"| AssetToken
+    Investor -->|"7. Trade P2P via Escrow"| Marketplace
+    Marketplace -.->|"Validate KYC Whitelist"| KYC
 
-    Issuer -->|8. Deposit Rental Income| YieldToken
-    YieldToken -->|9. Claim Dividends| Investor
+    Issuer -->|"8. Deposit Rental & Revenue"| YieldToken
+    YieldToken -->|"9. Claim Dividends"| Investor
 
-    Investor -->|10. Request Capital Redemption| Redeem
+    Investor -->|"10. Request Token Redemption"| Redeem
 ```
 
 ---
