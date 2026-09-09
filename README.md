@@ -64,14 +64,14 @@ A collection of complete decentralized applications integrating frontend with sm
 
 ### 📂 Project List
 
-| Project Name                               | Tech Used                                | Description                                                                 |
-|--------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
-| [AXT Wallet](./D-Apps/AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29) <br/><sub>[📲 Download APK](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b)</sub> | React Native, Expo, ethers.js, WalletConnect v2, AES-256-GCM | Production-grade non-custodial decentralized cryptocurrency wallet mobile app (Android) with hardware-backed Keystore, biometrics & multi-chain EVM |
-| [CrossLink Bridge](./D-Apps/CrossLink%20(Secure%20Bridges%20for%20a%20Decentralized%20World)) | React 19, Vite, Tailwind CSS, Wagmi, RainbowKit | Secure multi-chain decentralized bridge across 7+ networks with wide stablecoin support |
-| [Block ID](./D-Apps/Block%20ID%20(%20Your%20Web3%20identity%20on%20blockchains%20))                | React, Vite, wagmi, RainbowKit, Solidity      | Your Web3 identity on blockchains - decentralized domain registration and management system |
-| [BlockLance](./D-Apps/BlockLance(%20Decentralized%20Freelance%20Escrow%20Platform%20)) | React, Vite, Hardhat, Solidity, Web3.js | Decentralized freelance escrow platform with secure payment handling and dispute resolution  |
-| [CyroBid Arena](./D-Apps/CyroBid%20Arena(%20NFT%20Auction%20House%20))        | React, Vite, Hardhat, Solidity      | NFT auction house with decentralized bidding and auction management |
-| [Token Storm (TSender)](./D-Apps/Token%20Strom%20(%20Multi-Recipient%20ERC20%20Airdrop%20Platform%20)) | Next.js, wagmi, RainbowKit, Solidity      | Efficient ERC20 multi-recipient airdrop platform with gas-optimized smart contract |
+| Project Name | Tech Used | Description |
+| :--- | :--- | :--- |
+| [AXT Wallet](./D-Apps/AXT_wallet%20%28%20Decentralized%20wallet%20Android%20Application%29) | React Native, Expo, ethers.js, WalletConnect v2, AES-256-GCM | Production-grade non-custodial decentralized cryptocurrency wallet mobile app (Android) with hardware-backed Keystore, biometrics & multi-chain EVM • [📲 Download APK](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b) |
+| [CrossLink Bridge](./D-Apps/CrossLink%20%28Secure%20Bridges%20for%20a%20Decentralized%20World%29) | React 19, Vite, Tailwind CSS, Wagmi, RainbowKit | Secure multi-chain decentralized bridge across 7+ networks with wide stablecoin support |
+| [Block ID](./D-Apps/Block%20ID%20%28%20Your%20Web3%20identity%20on%20blockchains%20%29) | React, Vite, wagmi, RainbowKit, Solidity | Your Web3 identity on blockchains - decentralized domain registration and management system |
+| [BlockLance](./D-Apps/BlockLance%28%20Decentralized%20Freelance%20Escrow%20Platform%20%29) | React, Vite, Hardhat, Solidity, Web3.js | Decentralized freelance escrow platform with secure payment handling and dispute resolution |
+| [CyroBid Arena](./D-Apps/CyroBid%20Arena%28%20NFT%20Auction%20House%20%29) | React, Vite, Hardhat, Solidity | NFT auction house with decentralized bidding and auction management |
+| [Token Storm (TSender)](./D-Apps/Token%20Strom%20%28%20Multi-Recipient%20ERC20%20Airdrop%20Platform%20%29) | Next.js, wagmi, RainbowKit, Solidity | Efficient ERC20 multi-recipient airdrop platform with gas-optimized smart contract |
 | [Cyber Estate (RWA)](./D-Apps/RWA) | React, Vite, TypeScript, Tailwind CSS, ethers.js, Solidity | Production-grade RWA tokenization platform with KYC compliance, P2P marketplace, and yield distribution on BNB Chain |
 
 - `D-Apps/` contains full-stack decentralized applications
