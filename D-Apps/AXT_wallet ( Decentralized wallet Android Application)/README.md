@@ -19,6 +19,16 @@
     <a href="#-walletconnect-v2"><img src="https://img.shields.io/badge/WalletConnect-v2.24-3B99FC?style=for-the-badge&logo=walletconnect&logoColor=white" alt="WalletConnect" /></a>
     <a href="#-license"><img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="MIT License" /></a>
   </p>
+
+  <p align="center">
+    <a href="https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b">
+      <img src="https://img.shields.io/badge/📲_Download_Android_APK-Expo_EAS_Direct_Build-00C853?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK" />
+    </a>
+  </p>
+
+  <p align="center">
+    🚀 <b>Direct APK Download:</b> <a href="https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b"><b>Get AXT Wallet on your Android Device</b></a>
+  </p>
 </div>
 
 ---
@@ -210,7 +220,24 @@ flowchart TD
 
 ---
 
-## 🚀 Getting Started & Local Development
+## 🚀 Getting Started & App Download
+
+### 📲 Direct Android APK Download (Recommended)
+
+Get the pre-compiled Android build immediately without setting up a local development environment:
+
+[![Download Android APK](https://img.shields.io/badge/Download-Android_APK_(Expo_EAS)-00C853?style=for-the-badge&logo=android&logoColor=white)](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b)
+
+👉 **[Download AXT Wallet APK Build](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b)**
+
+1. Open the download link on your Android smartphone browser.
+2. Download the generated `.apk` installation package.
+3. Tap the file in your notifications or download manager to install (*allow "Install unknown apps" if prompted*).
+4. Open **AXT Wallet**, set up your 6-digit PIN, verify your 12-word recovery seed, and begin managing your Web3 portfolio!
+
+---
+
+### 💻 Local Development Setup
 
 ### Prerequisites
 - **Node.js**: v18.0.0 or higher

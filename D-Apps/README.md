@@ -8,7 +8,7 @@ Welcome to the **D-Apps** directory of this repository! This collection contains
 
 | Project Name | Category | Primary Tech Stack | Description | Live / Folder Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **🛡️ AXT Wallet** | **Mobile Web3 (Android)** | React Native, Expo 57, ethers.js, WalletConnect v2, AES-256-GCM | Production-grade non-custodial decentralized crypto wallet featuring Android Keystore hardware protection, biometrics, multi-chain EVM with custom RPCs, and ERC-20 token engine. | [Explore AXT Wallet](./AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29) |
+| **🛡️ AXT Wallet** | **Mobile Web3 (Android)** | React Native, Expo 57, ethers.js, WalletConnect v2, AES-256-GCM | Production-grade non-custodial decentralized crypto wallet featuring Android Keystore hardware protection, biometrics, multi-chain EVM with custom RPCs, and ERC-20 token engine. | [Docs](./AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29) • [📲 Download APK](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b) |
 | **🌉 CrossLink Bridge** | **Multi-Chain DeFi** | React 19, Vite, Tailwind CSS, Wagmi, RainbowKit | Seamless cross-chain asset bridging interface supporting 7+ major EVM chains and 10+ stablecoins with real-time balance checking and status tracking. | [Explore CrossLink](./CrossLink%20(Secure%20Bridges%20for%20a%20Decentralized%20World)) |
 | **🆔 Block ID** | **Web3 Identity** | React, Vite, wagmi, RainbowKit, Solidity | Decentralized identity and `.bnb` domain registry allowing users to register, renew, and manage blockchain domains with full ownership. | [Explore Block ID](./Block%20ID%20(%20Your%20Web3%20identity%20on%20blockchains%20)) |
 | **🤝 BlockLance** | **Freelance Escrow** | React, Vite, Hardhat, Solidity, Web3.js | Trustless freelance escrow platform with milestone-based smart contracts, automated dispute arbitration, and secure payment releases. | [Explore BlockLance](./BlockLance(%20Decentralized%20Freelance%20Escrow%20Platform%20)) |
@@ -28,13 +28,19 @@ Welcome to the **D-Apps** directory of this repository! This collection contains
   <img src="./AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29/assets/images/gitcover/photo_4_2026-09-09_12-07-41.jpg" width="220" alt="AXT Wallet Assets" />
 </div>
 
+<div align="center" style="margin-top: 14px;">
+  <a href="https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b">
+    <img src="https://img.shields.io/badge/📲_Download_Android_APK-Direct_Expo_Build-00C853?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+  </a>
+</div>
+
 ### Highlights:
 - **Zero-Knowledge Hardware Security:** Secrets encrypted with AES-256-GCM + PBKDF2/HKDF; Master Keys sealed in Android Keystore.
 - **Ephemeral Single-Pass Signing:** Private keys are created only in transient memory during PIN authorization and purged immediately after signing.
 - **Universal dApp Connectivity:** Built-in WalletConnect v2 (`@walletconnect/web3wallet`) supporting session management, `eth_sendTransaction`, `personal_sign`, and EIP-712 structured data.
 - **Multi-Chain Resilience:** Dynamic custom EVM RPC engine with automatic provider fallback to ensure uninterrupted blockchain uptime.
 
-👉 **[Read the complete AXT Wallet documentation](./AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29/README.md)**
+👉 **[Download Android APK Directly](https://expo.dev/accounts/velvosoft/projects/AXTwallet-app/builds/3d05ed1a-a3db-4bb5-a8b7-3fc7ada04a7b)** • **[Read the complete AXT Wallet documentation](./AXT_wallet%20(%20Decentralized%20wallet%20Android%20Application%29/README.md)**
 
 ---
 
